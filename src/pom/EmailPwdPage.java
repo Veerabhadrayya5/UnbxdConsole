@@ -16,7 +16,7 @@ private WebElement clickNext;
 
 	public EmailPwdPage(WebDriver driver)
 	{
-		PageFactory.initElements(driver, this);
+	PageFactory.initElements(driver, this);
 	}
 	
 	public void setEmail(String emailid)

@@ -33,11 +33,11 @@ public class BaseTest implements IConstant {
 			driver = new ChromeDriver();
 			log.info("Opening Chrome Browser");
 
-		} else {
+		} /*else {
 			driver = new FirefoxDriver();
 			log.info("Opening Firefox Browser");
 
-		}
+		}*/
 		strURL = AutoUtility.getPropertyValue(Config_Path, "URL");
 		driver.get(strURL);
 		log.info("Enter the url" + strURL);
@@ -47,7 +47,7 @@ public class BaseTest implements IConstant {
 		driver.manage().timeouts().implicitlyWait(lngITO, TimeUnit.SECONDS);
 	}
 
-	@AfterMethod
+	@AfterMethod(enabled=false)
 	public void closeApp() {
 		driver.quit();
 		log.info("Close the browser");
