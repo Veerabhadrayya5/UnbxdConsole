@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutomationSuite]">
+  <test name="TestFirefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="script.Test">
+        <methods>
+          <include name="m1"/>
+          <include name="openApp"/>
+          <include name="initFrameWork"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.Test -->
+    </classes>
+  </test> <!-- TestFirefox(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->
