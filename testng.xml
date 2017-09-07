@@ -12,4 +12,4 @@
 			<package name="script" />
 		</packages>
 	</test>
-</suite> 
+</suite> "testng.xml"
